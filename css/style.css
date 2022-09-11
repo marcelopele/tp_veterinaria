@@ -1,6 +1,8 @@
 header{
     background-color:rgba(68, 139, 197, 0.5);
     height: 70px;
+    box-shadow: 0 5px rgba(75, 95, 155, 0.5);
+
 }
 
 div#marca img{
@@ -37,4 +39,17 @@ header nav ul li a:hover{
 header nav ul li a:active{
     background-color: rgb(124, 65, 78);
     border: inset;
-}   
+}
+
+section div.card_adopciones{
+    display: inline-block;
+    width: 17%;
+    box-shadow: 5px 5px rgba(75, 95, 155, 0.5);
+    padding: 0.5%;
+    margin: 0.5%;
+    border-radius: 10%;
+}
+section div.card_adopciones img{
+    width: 90%;
+
+}
