@@ -1,0 +1,40 @@
+header{
+    background-color:rgba(68, 139, 197, 0.5);
+    height: 70px;
+}
+
+div#marca img{
+    height: 60px;
+    margin:5px 10px;
+    float:left;
+}
+
+header nav{
+    float: right;
+    margin: 10px;
+}
+header nav ul{
+    margin: 10px;
+    padding: 0;
+    float: left;
+}
+header nav ul li{
+    display: inline;
+    background-color: aqua;
+}
+header nav ul li a{
+    padding: 10px;
+    background-color: rgb(50, 50, 136);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 20px 0%;
+    border: outset;
+}
+header nav ul li a:hover{
+    background-color: rgb(63, 59, 0);
+    border: outset;
+}
+header nav ul li a:active{
+    background-color: rgb(124, 65, 78);
+    border: inset;
+}   
