@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="../ico/huella.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="STYLESHEET" type="text/css" href="../css/style.css">
+    <script src="../js/logica.js"></script>
 </head>
 <body>
     <header>
@@ -15,7 +16,10 @@
             <img src="../img/logo.png" alt="logo de la empresa">
         </div>
         <h1 class="animate__animated animate__rubberBand">Nombre de la veterinaria</h1>
-        <nav>
+        <div class="togMenu" onclick="togMenu()">
+            <img src="../img/3R.png" alt="menu">
+        </div>
+        <nav id="menu" class="menu_o">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
@@ -30,112 +34,72 @@
         <div class="card_adopciones">
             <h2>Cornelius</h2>
             <img src="../img/dog_01.jpg" alt="dog_01">
-            <ul>
-                <li>Macho</li>
-                <li>3 meses</li>
-            </ul>
             <div class="ubicacion">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=90% height=100% style="border:0; border-radius: 10%;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=98% height=100% allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
         <div class="card_adopciones">
-            <h2>Marley</h2>
+            <h2>Laika</h2>
             <img src="../img/dog_02.jpg" alt="dog_01">
-            <ul>
-                <li>Hembra</li>
-                <li>1 añito</li>
-            </ul>
             <div class="ubicacion">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26428.497336284086!2d-59.05933488219473!3d-34.106355117689354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb0b6a92357b4d%3A0x5f7d9ac7c145085d!2sZ%C3%A1rate%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1663004938938!5m2!1ses-419!2sar" width=90% height=100% style="border:0; border-radius: 10%;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26428.497336284086!2d-59.05933488219473!3d-34.106355117689354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb0b6a92357b4d%3A0x5f7d9ac7c145085d!2sZ%C3%A1rate%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1663004938938!5m2!1ses-419!2sar" width=98% height=100% allowfullscreen="" loading="lazy"></iframe>
             </div>
 
         </div>
         <div class="card_adopciones">
-            <h2>completar nombre</h2>
+            <h2>Marco</h2>
             <img src="../img/dog_03.jpg" alt="dog_01">
-            <ul>
-                <li>sexo</li>
-                <li>edad</li>
-            </ul>
             <div class="ubicacion">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=90% height=100% style="border:0; border-radius: 10%;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=98% height=100% allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
         <div class="card_adopciones">
-            <h2>completar nombre</h2>
+            <h2>Polo</h2>
             <img src="../img/dog_04.jpg" alt="dog_01">
-            <ul>
-                <li>sexo</li>
-                <li>edad</li>
-            </ul>
             <div class="ubicacion">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=90% height=100% style="border:0; border-radius: 10%;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=98% height=100% allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
         <div class="card_adopciones">
-            <h2>completar nombre</h2>
+            <h2>Pocho</h2>
             <img src="../img/dog_05.jpg" alt="dog_01">
-            <ul>
-                <li>sexo</li>
-                <li>edad</li>
-            </ul>
             <div class="ubicacion">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=90% height=100% style="border:0; border-radius: 10%;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=98% height=100% allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
         <div class="card_adopciones">
-            <h2>completar nombre</h2>
+            <h2>Albino</h2>
             <img src="../img/dog_06.jpg" alt="dog_01">
-            <ul>
-                <li>sexo</li>
-                <li>edad</li>
-            </ul>
             <div class="ubicacion">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=90% height=100% style="border:0; border-radius: 10%;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=98% height=100% allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
         <div class="card_adopciones">
-            <h2>completar nombre</h2>
+            <h2>Negro</h2>
             <img src="../img/dog_07.jpg" alt="dog_01">
-            <ul>
-                <li>sexo</li>
-                <li>edad</li>
-            </ul>
             <div class="ubicacion">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=90% height=100% style="border:0; border-radius: 10%;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=98% height=100% allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
         <div class="card_adopciones">
-            <h2>completar nombre</h2>
+            <h2>Marley</h2>
             <img src="../img/dog_08.jpg" alt="dog_01">
-            <ul>
-                <li>sexo</li>
-                <li>edad</li>
-            </ul>
             <div class="ubicacion">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=90% height=100% style="border:0; border-radius: 10%;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=98% height=100% allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
         <div class="card_adopciones">
-            <h2>completar nombre</h2>
+            <h2>Pinky y Cerebro</h2>
             <img src="../img/dog_09.jpg" alt="dog_01">
-            <ul>
-                <li>sexo</li>
-                <li>edad</li>
-            </ul>
             <div class="ubicacion">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=90% height=100% style="border:0; border-radius: 10%;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=98% height=100% allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
         <div class="card_adopciones">
-            <h2>completar nombre</h2>
+            <h2>Odie</h2>
             <img src="../img/dog_10.jpg" alt="dog_01">
-            <ul>
-                <li>sexo</li>
-                <li>edad</li>
-            </ul>
             <div class="ubicacion">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=90% height=100% style="border:0; border-radius: 10%;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13134.026052223242!2d-58.45350641429727!3d-34.61663827665794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3911f8ab2d%3A0x27b394c2f3d87d2d!2sCaballito%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1663005658210!5m2!1ses-419!2sar" width=98% height=100% allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
 

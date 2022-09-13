@@ -3,7 +3,6 @@ header{
     left: 0;
     top:0;
     width: 100%;
-    height: 70px;
     box-shadow: 0 5px rgba(75, 95, 155, 0.5);
     position: fixed;
     margin: 0;
@@ -26,9 +25,9 @@ footer{
 }
 
 header h1{
-    position: absolute;
-    left: 10%;
+    float:left;
     color: rgb(40, 40, 105);
+    margin: 15px;
 }
 div#marca img{
     height: 60px;
@@ -36,9 +35,16 @@ div#marca img{
     float:left;
 }
 
+header div.togMenu{
+    display: none;
+    padding: 10px;
+}
+header div.togMenu img{
+    height: 40px;
+}
 header nav{
     float: right;
-    margin: 10px;
+    margin: 15px;
 }
 header nav ul{
     margin: 10px;
@@ -47,7 +53,8 @@ header nav ul{
 }
 header nav ul li{
     display: inline;
-    background-color: aqua;
+    padding: 12px 0;
+
 }
 header nav ul li a{
     padding: 10px;
@@ -75,8 +82,94 @@ section div.card_adopciones{
     border-radius: 20px;
     background-color: rgba(68, 139, 197, 0.10);
 }
+section div.card_adopciones h2{
+    position: absolute;
+    width: 17%;
+    height: 32px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    margin: 0;
+}
 section div.card_adopciones img{
-    width: 90%;
-
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+section div.card_adopciones div.ubicacion iframe{
+    border:0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
+
+@media all and (min-width:950px) and (max-width: 1100px){
+    section div.card_adopciones, section div.card_adopciones h2{
+        width: 22%;
+    }
+    header div.togMenu{
+        display: none;
+    }
+    header nav.menu_v{
+        display: flex;
+    }
+    header nav.menu_o{
+        display: flex;
+    }
+}
+@media all and (min-width:650px) and (max-width: 949px){
+    section div.card_adopciones, section div.card_adopciones h2{
+        width: 30%;
+    }
+    header div.togMenu{
+        display: flex;
+        float: right;
+    }
+    header nav.menu_v{
+        display: flex;
+    }
+    header nav.menu_o{
+        display: none;
+    }
+}
+@media all and (min-width:450px) and (max-width: 649px){
+    section div.card_adopciones, section div.card_adopciones h2{
+        width: 45%;
+    }
+    header div.togMenu{
+        display: flex;
+        float: right;
+    }
+    header nav.menu_v{
+        display: flex;
+        float: left;
+    }
+    header nav.menu_o{
+        display: none;
+    }
+    header nav ul li{
+        display: block;
+    }
+}
+@media all and (max-width: 449px){
+    section div.card_adopciones, section div.card_adopciones h2{
+        width: 99%;
+    }
+    header div.togMenu{
+        display: flex;
+        float: right;
+    }
+    header nav.menu_v{
+        display: flex;
+        float: left;
+    }
+    header nav.menu_o{
+        display: none;
+    }
+    header nav ul li{
+        display: block;
+    }
+}

@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="../ico/huella.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="STYLESHEET" type="text/css" href="../css/style.css">
+    <script src="../js/logica.js"></script>
 </head>
 <body>
     <header>
@@ -15,7 +16,10 @@
             <img src="../img/logo.png" alt="logo de la empresa">
         </div>
         <h1 class="animate__animated animate__rubberBand">Nombre de la veterinaria</h1>
-        <nav>
+        <div class="togMenu" onclick="togMenu()">
+            <img src="../img/3R.png" alt="menu">
+        </div>
+        <nav id="menu" class="menu_o">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
