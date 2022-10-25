@@ -8,14 +8,13 @@
     <link rel="icon" type="image/x-icon" href="../ico/huella.ico" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="STYLESHEET" type="text/css" href="../css/style.css">
-    <script src="../js/logica.js"></script>
 </head>
 <body>
     <header>
         <div id="marca">
             <img src="../img/logo.png" alt="logo de la empresa">
         </div>
-        <h1 class="animate__animated animate__rubberBand">Nombre de la veterinaria</h1>
+        <h1 class="animate__animated animate__rubberBand">La Huellita</h1>
         <div class="togMenu" onclick="togMenu()">
             <img src="../img/3R.png" alt="menu">
         </div>
@@ -23,7 +22,6 @@
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="donaciones.html">Donaciones</a></li>
                 <li><a href="adopciones.html">Adopciones</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
@@ -31,11 +29,85 @@
     </header>
 
     <section>
-        <img src="../img/proximamente.png" alt="proximamente">
+        <div class="contacto">
+            <h2>Contacto</h2>
+            <div class="bloque1">
+                <span>Redes sociales:</span>
+                <img src="/img/correo.png" alt="Correo">
+                <img src="/img/fb.png" alt="Facebook">
+                <img src="/img/ln.png" alt="LinkedIn">
+                <img src="/img/WS.png" alt="WhatsApp">
+            </div>
+
+            <div class="bloque1">
+                <span>Personalmente:</span>
+                <p>Sucursal 1: Calle Ejemplo altura 4201 (1401) Ciudad Autónoma de Bs As</p>
+                <p>Sucursal 2: Otra Dirección  528 (2846) Gral San Martín - Entre Rios</p>
+            </div>
+
+            <div class="bloque1">
+                <span>Formulario de contacto:</span>
+                <form action="index.html" id="form_contacto" onsubmit="return Validar_Formulario()">
+                    <div class="row">
+                        <div class="row_label">
+                            <label for="nombre">Nombre:</label>
+                        </div>
+                        <div class="row_cpo">
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row_label">
+                            <label for="edad">Edad:</label>
+                        </div>
+                        <div class="row_cpo">
+                            <input type="number" id="edad" name="edad" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row_label">
+                            <label for="email">Email:</label>
+                        </div>
+                        <div class="row_cpo">
+                            <input type="text" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row_label">
+                            <label for="asunto">Asunto:</label>
+                        </div>
+                        <div class="row_cpo">
+                            <input type="text" id="asunto" name="asunto" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row_label">
+                            <label for="mensaje">Mensaje:</label>
+                        </div>
+                        <div class="row_cpo">
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="row_label">
+                            <input type="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
     </section>
     
     <footer>
 
     </footer>
+    <script src="../js/logica.js"></script>
 </body>
 </html>

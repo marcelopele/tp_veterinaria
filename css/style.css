@@ -106,6 +106,42 @@ section div.card_adopciones div.ubicacion iframe{
 }
 
 
+.contacto .bloque1{
+    margin-top: 1rem;
+    border-top: groove;
+}
+.contacto .bloque1 img{
+    width: 2rem;
+}
+.contacto .bloque1 span{
+    vertical-align: top;
+    margin: 2rem;
+    font-weight: bold;
+}
+.contacto .bloque1 p, .contacto .bloque1 .row{
+    vertical-align: top;
+    margin-left: 8vw;
+}
+.bloque1 .row{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contacto .bloque1 .row .row_label,.contacto .bloque1 .row .row_cpo{
+    vertical-align: top;
+    display: inline-block;
+}
+.contacto .bloque1 .row .row_label{
+    width: 8rem;
+}
+.contacto .bloque1 .row .row_cpo{
+    width: 24rem;
+}
+.contacto .bloque1 .row .row_cpo input, .contacto .bloque1 .row .row_cpo textarea{
+    width: 100%;
+}
+
+
 @media all and (min-width:950px) and (max-width: 1100px){
     section div.card_adopciones, section div.card_adopciones h2{
         width: 22%;
