@@ -8,6 +8,23 @@ header{
     margin: 0;
     z-index: 1;
 }
+section h2{
+    width: 1000px;
+    text-align: center;
+    color: snow;
+    background-color: lightblue;
+    margin-left: 15px;
+}
+section h1{
+    width: 800px;
+    margin-left: 25%;
+    margin-top: 70px;
+}
+section h1 p{
+    text-align: center;
+    color: darkcyan;
+    background-color: aliceblue;
+}
 section{
     margin-top: 85px;
     margin-bottom: 85px;
