@@ -6,6 +6,8 @@ header{
     box-shadow: 0 5px rgba(75, 95, 155, 0.5);
     position: fixed;
     margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
     z-index: 1;
 }
 section h2{
